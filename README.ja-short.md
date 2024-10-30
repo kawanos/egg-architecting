@@ -155,6 +155,12 @@ gcloud compute networks vpc-access connectors create game-api-vpc-access --netwo
 ```
 
 ### 8. Cloud Run サービスをデプロイ
+* 2024年10月追記  
+Cloud Build の(デフォルトのサービスアカウントの扱いが変わった)[https://cloud.google.com/build/docs/cloud-build-service-account-updates?hl=ja]ため
+```
+make build-sa
+```
+
 アプリケーションで利用する環境変数を設定
 ```
 VA=projects/$GOOGLE_CLOUD_PROJECT/locations/asia-northeast1/connectors/game-api-vpc-access
