@@ -220,7 +220,8 @@ curl $URL/api/user/foo -X POST
 - ユーザーにアイテムの追加（購入）
 ```
 USER_ID=<your user id>
-ITEM_ID=d169f397-ba3f-413b-bc3c-a465576ef06e
+ITEM_ID=6d491eed-acf1-4204-a966-599c9ada5c51
+
 curl $URL/api/user_id/$USER_ID/$ITEM_ID -X PUT
 ```
 
